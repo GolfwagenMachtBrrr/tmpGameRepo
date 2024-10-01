@@ -1,0 +1,14 @@
+[info]
+name=zombie
+[stats]
+health=100
+damage=10
+speed=5
+attackspeed=200
+attackrange=5
+deceptionradius=25
+
+
+
+
+@Ko-Autor Lukas Babaronschütz "Range"

@@ -144,6 +144,7 @@
     <ClCompile Include="NoizeGenerator.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="Spawner.cpp" />
     <ClCompile Include="TileMap.cpp" />
     <ClCompile Include="Viewer.cpp" />
     <ClCompile Include="Wave.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="PerlinMath.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Settings.h" />
+    <ClInclude Include="Spawner.h" />
     <ClInclude Include="TextureHolder.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="TileMap.h" />
@@ -171,6 +173,11 @@
     <ClInclude Include="Wave.h" />
     <ClInclude Include="WayPoint.h" />
     <ClInclude Include="WayPointManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Bandit.txt" />
+    <Text Include="Skeleton.txt" />
+    <Text Include="Zombie.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

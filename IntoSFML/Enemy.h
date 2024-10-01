@@ -1,6 +1,7 @@
 #pragma once
 #include "SFML/Graphics.hpp"
 #include "WayPoint.h"
+#include "TextureHolder.h"
 #include <string>
 
 #include <iostream>
@@ -8,12 +9,13 @@
 class Enemy
 {
 public:
-	void LoadAssets(const std::string& text_name)
+	void LoadAssets(TextureHolder &textureholder)
 	{
 		// access texture Holder 
 		// this->m_texture = texture; 
+		this->m_bodytexture = textureholder.GetTexture("Skeleton");
 	}
-
+	
 	void Initialize(const float& speed, const int& damage, const __int32& attackspeed, const WayPoint& waypoint, const sf::Color& color)
 	{
 		this->m_speed = speed;
@@ -33,6 +35,13 @@ public:
 	void Draw(sf::RenderWindow& window) const
 	{
 		window.draw(m_body);
+	}
+
+public:
+	// Getter Functions
+	sf::Vector2f GetPosition() const
+	{
+		return this->m_position; 
 	}
 
 protected:
@@ -120,10 +129,16 @@ protected:
 		return false;
 	}
 
+public: 
+	int p_deflectionRadius; 
+private:
+	sf::Texture m_bodytexture;
+	sf::Sprite  m_bodysprite; 
 
 protected:
 
 	float   m_speed;
+	float	m_range; //@Lukas Bawaronschütz
 	int     m_damage;
 	int		m_health;
 
@@ -135,5 +150,4 @@ protected:
 
 	sf::Vector2f m_position;
 	sf::Vector2f m_target;
-
 };

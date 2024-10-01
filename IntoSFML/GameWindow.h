@@ -38,14 +38,14 @@ public:
 
     void InitEnemyManager()
     {
-        sf::Vector2f center(this->m_window.getSize().x/2, this->m_window.getSize().y / 2);
+        sf::Vector2f center(this->m_player.GetPosition());
         this->m_enemymanager.Initialize(center);
 
     }
 
     void IntitOtherValues()
     {
-        this->m_tilesheet = "C:/Users/JanSa/OneDrive/Desktop/Programmieren/Projekte/ProcMapGen/ProcGen/Assets/World/NumsVer3.png";
+        this->m_tilesheet = "../Assets/World/NumsVer3.png";
         this->m_tilesize.x = 25;
         this->m_tilesize.y = 40;
         this->m_dt = 16;
@@ -79,7 +79,7 @@ public:
     {
         sf::Vector2f startingPosition(0, 0);
         float speed = 0.125 / 20;
-        float zoom = 2;
+        float zoom = 0.2;
 
         this->m_gameview.Initialize(startingPosition, speed, zoom);
     }

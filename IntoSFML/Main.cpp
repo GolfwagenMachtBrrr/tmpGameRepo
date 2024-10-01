@@ -17,7 +17,7 @@
 int main()
 {
     GameWindow gw; 
-    gw.Start(1); 
+    gw.Start(1);
 
 
 

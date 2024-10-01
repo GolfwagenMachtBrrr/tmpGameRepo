@@ -60,6 +60,9 @@
     <ClCompile Include="Inventory.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Spawner.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Wave.h">
@@ -128,5 +131,13 @@
     <ClInclude Include="EnemyManager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Zombie.txt" />
+    <Text Include="Skeleton.txt" />
+    <Text Include="Bandit.txt" />
   </ItemGroup>
 </Project>
